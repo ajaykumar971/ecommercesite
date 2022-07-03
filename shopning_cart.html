@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <title>REDSTORE || ALL PRODUCTS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="shopning_cart.html"><img src="images/cart.png" width="30px" height="30ppx"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- --------------------cart items-------------------- -->
+
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>product</th>
+                <th>quaantity</th>
+                <th>subtotal</th>
+            </tr>
+            <tr>
+                <td><div class="cart-info">
+                    <img src="images/buy-1.jpg">
+                    <div>
+                        <p>red printed t-shirt</p>
+                        <p>price: $50.43</p>
+                        <a href="#">remove</a>
+                    </div>
+                </div></td>
+                <td><input type="number" value="1"></td>
+                <td>$54.43</td>
+            </tr>
+            <tr>
+                <td><div class="cart-info">
+                    <img src="images/buy-2.jpg">
+                    <div>
+                        <p>snicker</p>
+                        <p>price: $50.43</p>
+                        <a href="#">remove</a>
+                    </div>
+                </div></td>
+                <td><input type="number" value="1"></td>
+                <td>$54.43</td>
+            </tr>
+            <tr>
+                <td><div class="cart-info">
+                    <img src="images/buy-3.jpg">
+                    <div>
+                        <p>blue jeans</p>
+                        <p>price: $50.43</p>
+                        <a href="#">remove</a>
+                    </div>
+                </div></td>
+                <td><input type="number" value="1"></td>
+                <td>$54.43</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>tax</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>$220</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+<!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nisi eos adipisci.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">coupons</a></li>
+                        <li><a href="#">blog post</a></li>
+                        <li><a href="#">return policy</a></li>
+                        <li><a href="#">join affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">instagram</a></li>
+                        <li><a href="#">twitter </a></li>
+                        <li><a href="#">youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="cpr8">copyright 2020 ggstj</p>
+        </div>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
